@@ -1,35 +1,21 @@
 
-#myCarousel {
+#container {
+    background-image: url("assets/images/skyline.jpg");
+    z-index: -1;
     float: left;
     height: 100%;
     width: 31%;
-    
-}
 
-.item:after{
-  
-        content:"";
-        display:block;
-        position:absolute;
-        top:0;
-        bottom:0;
-        left:0;
-        right:0;
-        background:rgba(0,0,0,0.3);
-      
 }
-
-#carouselImages {
-    background:rgba(0,0,0,0.6);
+img {
+    background:rgba(0,0,0,0.3);
     z-index: -1;
 }
 
-right.carousel-control {
-    z-index: -1;
-}
-
-left.carousel-control {
-    z-index: -1;
+.search-page {
+    z-index: 1;
+    margin-top: -600px;
+    text-align:center;
 }
 
 
@@ -48,15 +34,17 @@ left.carousel-control {
     
 }
 
-.carousel-caption {
-    top: 30%;
+#caption {
     bottom: auto;
     text-align: center;
     opacity: 0.9;
+    color:white;
 }
 
 .form-control {
     opacity:0.4;
+    text-align: center;
+    color:white;
 }
 
 .dropdown > .dropdown-menu {
@@ -85,6 +73,8 @@ ul.dropdown-menu>li {
     letter-spacing: 3px;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 18px;
+    top: 30%;
+    z-index: 1;
 }
 
 .btn {
