@@ -26,7 +26,7 @@
 =======
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-   
+  
     <title>Search for Parking</title>
     <style>
       /* Always set the map height explic itly to define the size of the div
@@ -175,12 +175,13 @@
       // This example requires the Places library. Include the libraries=places
       // parameter when you first load the API. For example:
       // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
-
+    
       function initAutocomplete() {
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -33.8688, lng: 151.2195},
+          center: {lat: 30.267153, lng:  -97.7430608},
           zoom: 13,
           mapTypeId: 'roadmap'
+          
         });
 
         // Create the search box and link it to the UI element.
@@ -242,10 +243,10 @@
           map.fitBounds(bounds);
         });
       }
-
+     
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDO9-3zC1SgUpkcnrERVzsS3h4xEySru3k&libraries=places&callback=initAutocomplete"
-         async defer></script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDO9-3zC1SgUpkcnrERVzsS3h4xEySru3k&libraries=places&callback=initAutocomplete"
+     async defer></script>
   </body>
 >>>>>>> 0d7e175eb19b4e571d49a1e458f92cbba13c21a9
 </html>
